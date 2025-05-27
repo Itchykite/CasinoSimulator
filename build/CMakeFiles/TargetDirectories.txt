@@ -1,0 +1,3 @@
+/home/kacper/cpp/CasinoSimulator/build/CMakeFiles/CasinoSimulator.dir
+/home/kacper/cpp/CasinoSimulator/build/CMakeFiles/edit_cache.dir
+/home/kacper/cpp/CasinoSimulator/build/CMakeFiles/rebuild_cache.dir
