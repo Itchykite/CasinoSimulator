@@ -617,6 +617,9 @@ CasinoSimulator: /usr/lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a \
   /usr/lib/ld-linux-x86-64.so.2 \
+  /usr/lib/libEGL.so.1 \
+  /usr/lib/libGL.so.1 \
+  /usr/lib/libGLEW.so \
   /usr/lib/libGLX.so \
   /usr/lib/libGLdispatch.so.0 \
   /usr/lib/libOpenGL.so \
@@ -628,6 +631,8 @@ CasinoSimulator: /usr/lib/Scrt1.o \
   /usr/lib/libm.so.6 \
   /usr/lib/libmvec.so.1 \
   /usr/lib/libxcb.so.1 \
+  /usr/lib32/libEGL.so.1 \
+  /usr/lib32/libGL.so.1 \
   /usr/lib32/libGLdispatch.so.0 \
   /usr/lib32/libX11.so.6 \
   /usr/lib32/libXau.so.6 \
@@ -652,6 +657,8 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
 
 /usr/lib32/libGLdispatch.so.0:
 
+/usr/lib32/libGL.so.1:
+
 /usr/lib/libmvec.so.1:
 
 /usr/lib/libm.so.6:
@@ -660,9 +667,13 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
 
 /usr/lib/libX11.so.6:
 
+/usr/lib/libGLX.so:
+
+/usr/lib/libGLEW.so:
+
 /usr/lib/libOpenGL.so:
 
-/usr/lib/libGLX.so:
+/usr/lib/libGL.so.1:
 
 /usr/lib/ld-linux-x86-64.so.2:
 
@@ -741,6 +752,8 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
 /usr/include/c++/15.1.1/tr1/poly_hermite.tcc:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxfp8intrin.h:
+
+/usr/lib/libEGL.so.1:
 
 /usr/include/c++/15.1.1/ext/type_traits.h:
 
@@ -905,6 +918,8 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
 /usr/include/c++/15.1.1/stdlib.h:
 
 /usr/include/c++/15.1.1/bits/ptr_traits.h:
+
+/usr/lib32/libEGL.so.1:
 
 /usr/include/bits/types/timer_t.h:
 

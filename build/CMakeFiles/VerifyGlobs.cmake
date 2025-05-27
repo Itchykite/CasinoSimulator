@@ -6,6 +6,7 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/kacper/cpp/CasinoSimula
 set(OLD_GLOB
   "/home/kacper/cpp/CasinoSimulator/src/game.cpp"
   "/home/kacper/cpp/CasinoSimulator/src/main.cpp"
+  "/home/kacper/cpp/CasinoSimulator/src/shader_utils.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

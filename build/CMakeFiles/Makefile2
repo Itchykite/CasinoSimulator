@@ -85,12 +85,12 @@ clean: CMakeFiles/CasinoSimulator.dir/clean
 CMakeFiles/CasinoSimulator.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CasinoSimulator.dir/build.make CMakeFiles/CasinoSimulator.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CasinoSimulator.dir/build.make CMakeFiles/CasinoSimulator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kacper/cpp/CasinoSimulator/build/CMakeFiles --progress-num=1,2,3 "Built target CasinoSimulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kacper/cpp/CasinoSimulator/build/CMakeFiles --progress-num=1,2,3,4 "Built target CasinoSimulator"
 .PHONY : CMakeFiles/CasinoSimulator.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CasinoSimulator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kacper/cpp/CasinoSimulator/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kacper/cpp/CasinoSimulator/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CasinoSimulator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kacper/cpp/CasinoSimulator/build/CMakeFiles 0
 .PHONY : CMakeFiles/CasinoSimulator.dir/rule
@@ -102,7 +102,7 @@ CasinoSimulator: CMakeFiles/CasinoSimulator.dir/rule
 # codegen rule for target.
 CMakeFiles/CasinoSimulator.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CasinoSimulator.dir/build.make CMakeFiles/CasinoSimulator.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kacper/cpp/CasinoSimulator/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target CasinoSimulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kacper/cpp/CasinoSimulator/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target CasinoSimulator"
 .PHONY : CMakeFiles/CasinoSimulator.dir/codegen
 
 # clean rule for target.

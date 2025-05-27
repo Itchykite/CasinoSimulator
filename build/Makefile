@@ -178,6 +178,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CasinoSimulator.dir/build.make CMakeFiles/CasinoSimulator.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/shader_utils.o: src/shader_utils.cpp.o
+.PHONY : src/shader_utils.o
+
+# target to build an object file
+src/shader_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CasinoSimulator.dir/build.make CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o
+.PHONY : src/shader_utils.cpp.o
+
+src/shader_utils.i: src/shader_utils.cpp.i
+.PHONY : src/shader_utils.i
+
+# target to preprocess a source file
+src/shader_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CasinoSimulator.dir/build.make CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.i
+.PHONY : src/shader_utils.cpp.i
+
+src/shader_utils.s: src/shader_utils.cpp.s
+.PHONY : src/shader_utils.s
+
+# target to generate assembly for a file
+src/shader_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CasinoSimulator.dir/build.make CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.s
+.PHONY : src/shader_utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -193,6 +217,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/shader_utils.o"
+	@echo "... src/shader_utils.i"
+	@echo "... src/shader_utils.s"
 .PHONY : help
 
 

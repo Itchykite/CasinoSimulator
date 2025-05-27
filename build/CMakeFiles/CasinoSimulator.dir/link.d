@@ -4,6 +4,7 @@ CasinoSimulator: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o \
   CMakeFiles/CasinoSimulator.dir/src/game.cpp.o \
   CMakeFiles/CasinoSimulator.dir/src/main.cpp.o \
+  CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o \
   /usr/local/lib/libSDL2.so \
   /usr/lib/libGLEW.so \
   /usr/lib/libGLX.so \
@@ -59,6 +60,8 @@ CasinoSimulator: \
 CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
 
 CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
+
+CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o:
 
 /usr/local/lib/libSDL2.so:
 

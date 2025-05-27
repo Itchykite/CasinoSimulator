@@ -1,4 +1,5 @@
-#include "../include/game.hpp"
+#include <game.hpp>
+#include <shader_utils.hpp>
 
 SDL_Window* Game::window = nullptr;
 SDL_GLContext Game::glContext = nullptr;
@@ -42,6 +43,9 @@ bool Game::Init()
 
     glViewport(0, 0, windowWidth, windowHeight);
     glEnable(GL_DEPTH_TEST);
+
+    GLuint shaderProgram = CreateShaderProgram("../assets/shaders/vertex_shader.glsl", "../assets/shaders/fragment_shader.glsl");
+    glUseProgram(shaderProgram);
 
     return true;
 }

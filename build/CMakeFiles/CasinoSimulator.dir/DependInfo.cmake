@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kacper/cpp/CasinoSimulator/src/game.cpp" "CMakeFiles/CasinoSimulator.dir/src/game.cpp.o" "gcc" "CMakeFiles/CasinoSimulator.dir/src/game.cpp.o.d"
   "/home/kacper/cpp/CasinoSimulator/src/main.cpp" "CMakeFiles/CasinoSimulator.dir/src/main.cpp.o" "gcc" "CMakeFiles/CasinoSimulator.dir/src/main.cpp.o.d"
+  "/home/kacper/cpp/CasinoSimulator/src/shader_utils.cpp" "CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o" "gcc" "CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o.d"
   "" "CasinoSimulator" "gcc" "CMakeFiles/CasinoSimulator.dir/link.d"
   )
 
