@@ -9,6 +9,9 @@ public:
     static int windowWidth;
     static int windowHeight;
 
+    static GLuint VAO;
+    static GLuint VBO;
+
     static bool Init();
     static void Run();
     static void HandleEvents();

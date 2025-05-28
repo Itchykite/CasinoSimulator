@@ -8,6 +8,33 @@ bool Game::running = true;
 int Game::windowWidth = 800;
 int Game::windowHeight = 600;
 
+GLuint Game::VAO = 0;
+GLuint Game::VBO = 0;
+
+void setup()
+{
+    float vertices[] =
+    {
+        0.0f,   0.5f,   0.0f,  // Top vertex
+       -0.5f,  -0.5f,   0.0f, // Left vertex
+        0.5f,  -0.5f,   0.0f // Right vertex
+    };
+
+    glGenVertexArrays(1, &Game::VAO);
+    glGenBuffers(1, &Game::VBO);
+
+    glBindVertexArray(Game::VAO);
+
+    glBindBuffer(GL_ARRAY_BUFFER, Game::VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    glBindVertexArray(0);
+}
+
 bool Game::Init()
 {
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
@@ -20,7 +47,7 @@ bool Game::Init()
         return false;
     }
 
-    window = SDL_CreateWindow("Game Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, windowWidth, windowHeight, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN);
+    window = SDL_CreateWindow("Casino Simulator", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, windowWidth, windowHeight, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN);
     if(!window)
     {
         SDL_Log("Window could not be created! SDL_Error: %s", SDL_GetError());
@@ -44,8 +71,8 @@ bool Game::Init()
     glViewport(0, 0, windowWidth, windowHeight);
     glEnable(GL_DEPTH_TEST);
 
-    GLuint shaderProgram = CreateShaderProgram("../assets/shaders/vertex_shader.glsl", "../assets/shaders/fragment_shader.glsl");
-    glUseProgram(shaderProgram);
+
+    setup();
 
     return true;
 }
@@ -64,10 +91,19 @@ void Game::HandleEvents()
 
 void Game::Run()
 {
+    GLuint shaderProgram = CreateShaderProgram("../assets/shaders/vertex_shader.glsl", "../assets/shaders/fragment_shader.glsl");
+
     while(running)
     {
         HandleEvents();
     
+        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        glUseProgram(shaderProgram);
+        glBindVertexArray(Game::VAO);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
+
         SDL_GL_SwapWindow(window);
     }
 }
