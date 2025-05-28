@@ -11,6 +11,7 @@ public:
 
     static GLuint VAO;
     static GLuint VBO;
+    static GLuint EBO;
 
     static bool Init();
     static void Run();
