@@ -19,23 +19,39 @@ void setup()
     // CPU
     const std::vector<GLfloat> vertexPositions =
     {
-        -0.8f, -0.8f, 0.0f,
-        0.8f, -0.8f, 0.0f,
-        0.0f, 0.8f, 0.0f
+        -0.5f, -0.5f, 0.0f, 1.0f, 0.3f, 0.76f,
+        0.5f, -0.5f, 0.0f, 0.22f, 0.65f, 0.88f,
+        0.0f, 0.5f, 0.0f, 0.98f, 0.82f, 0.34f,
+        -0.5f, 0.5f, 0.0f, 0.51f, 0.75f, 0.23f,
+        0.5f, 0.5f, 0.0f, 0.45f, 0.67f, 0.12f
+    };
+
+    const std::vector<GLuint> vertexIndices =
+    {
+        0, 1, 2,
+        2, 3, 0,
+        1, 4, 2,
     };
 
     // GPU
     glGenVertexArrays(1, &Game::VAO);
+    glGenBuffers(1, &Game::VBO);
+    // bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
     glBindVertexArray(Game::VAO);
 
-    glGenBuffers(1, &Game::VBO);
     glBindBuffer(GL_ARRAY_BUFFER, Game::VBO);
     glBufferData(GL_ARRAY_BUFFER, vertexPositions.size() * sizeof(GLfloat), vertexPositions.data(), GL_STATIC_DRAW);
 
+    glGenBuffers(1, &Game::EBO);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, Game::EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, vertexIndices.size() * sizeof(GLuint), vertexIndices.data(), GL_STATIC_DRAW);
+
+    // position attribute
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
-    glBindVertexArray(0);
-    glDisableVertexAttribArray(0);
+    // color attribute
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
 }
 
 bool Game::Init()
@@ -117,8 +133,9 @@ void Game::Run()
 
         glBindVertexArray(Game::VAO);
         glBindBuffer(GL_ARRAY_BUFFER, Game::VBO);
+        glDrawElements(GL_TRIANGLES, 9, GL_UNSIGNED_INT, 0);
 
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        glBindVertexArray(0);
 
         SDL_GL_SwapWindow(window);
     }
