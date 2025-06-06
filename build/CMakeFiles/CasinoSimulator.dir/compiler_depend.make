@@ -3,10 +3,9 @@
 
 CMakeFiles/CasinoSimulator.dir/src/game.cpp.o: /home/kacper/cpp/CasinoSimulator/src/game.cpp \
   /home/kacper/cpp/CasinoSimulator/include/game.hpp \
+  /home/kacper/cpp/CasinoSimulator/include/glad.h \
   /home/kacper/cpp/CasinoSimulator/include/shader_utils.hpp \
-  /usr/include/GL/gl.h \
-  /usr/include/GL/glew.h \
-  /usr/include/GL/glu.h \
+  /usr/include/KHR/khrplatform.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -108,17 +107,21 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o: /home/kacper/cpp/CasinoSimulator/
   /usr/include/c++/15.1.1/bits/specfun.h \
   /usr/include/c++/15.1.1/bits/std_abs.h \
   /usr/include/c++/15.1.1/bits/stl_algobase.h \
+  /usr/include/c++/15.1.1/bits/stl_bvector.h \
   /usr/include/c++/15.1.1/bits/stl_construct.h \
   /usr/include/c++/15.1.1/bits/stl_function.h \
   /usr/include/c++/15.1.1/bits/stl_iterator.h \
   /usr/include/c++/15.1.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15.1.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/15.1.1/bits/stl_pair.h \
+  /usr/include/c++/15.1.1/bits/stl_uninitialized.h \
+  /usr/include/c++/15.1.1/bits/stl_vector.h \
   /usr/include/c++/15.1.1/bits/string_view.tcc \
   /usr/include/c++/15.1.1/bits/stringfwd.h \
   /usr/include/c++/15.1.1/bits/uses_allocator.h \
   /usr/include/c++/15.1.1/bits/uses_allocator_args.h \
   /usr/include/c++/15.1.1/bits/utility.h \
+  /usr/include/c++/15.1.1/bits/vector.tcc \
   /usr/include/c++/15.1.1/bits/version.h \
   /usr/include/c++/15.1.1/cctype \
   /usr/include/c++/15.1.1/cerrno \
@@ -127,7 +130,6 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o: /home/kacper/cpp/CasinoSimulator/
   /usr/include/c++/15.1.1/compare \
   /usr/include/c++/15.1.1/concepts \
   /usr/include/c++/15.1.1/cstddef \
-  /usr/include/c++/15.1.1/cstdint \
   /usr/include/c++/15.1.1/cstdio \
   /usr/include/c++/15.1.1/cstdlib \
   /usr/include/c++/15.1.1/cwchar \
@@ -161,6 +163,7 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o: /home/kacper/cpp/CasinoSimulator/
   /usr/include/c++/15.1.1/tr1/special_function_util.h \
   /usr/include/c++/15.1.1/tuple \
   /usr/include/c++/15.1.1/type_traits \
+  /usr/include/c++/15.1.1/vector \
   /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
   /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++locale.h \
@@ -357,9 +360,8 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o: /home/kacper/cpp/CasinoSimulator/
 
 CMakeFiles/CasinoSimulator.dir/src/main.cpp.o: /home/kacper/cpp/CasinoSimulator/src/main.cpp \
   /home/kacper/cpp/CasinoSimulator/include/game.hpp \
-  /usr/include/GL/gl.h \
-  /usr/include/GL/glew.h \
-  /usr/include/GL/glu.h \
+  /home/kacper/cpp/CasinoSimulator/include/glad.h \
+  /usr/include/KHR/khrplatform.h \
   /usr/include/alloca.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
@@ -443,8 +445,6 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o: /home/kacper/cpp/CasinoSimulator/
   /usr/include/c++/15.1.1/cmath \
   /usr/include/c++/15.1.1/compare \
   /usr/include/c++/15.1.1/concepts \
-  /usr/include/c++/15.1.1/cstddef \
-  /usr/include/c++/15.1.1/cstdint \
   /usr/include/c++/15.1.1/cstdlib \
   /usr/include/c++/15.1.1/debug/assertions.h \
   /usr/include/c++/15.1.1/debug/debug.h \
@@ -658,10 +658,9 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o: /home/kacper/cpp/CasinoSimulator/
   /usr/local/include/SDL2/close_code.h
 
 CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o: /home/kacper/cpp/CasinoSimulator/src/shader_utils.cpp \
+  /home/kacper/cpp/CasinoSimulator/include/glad.h \
   /home/kacper/cpp/CasinoSimulator/include/shader_utils.hpp \
-  /usr/include/GL/gl.h \
-  /usr/include/GL/glew.h \
-  /usr/include/GL/glu.h \
+  /usr/include/KHR/khrplatform.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -807,7 +806,6 @@ CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o: /home/kacper/cpp/CasinoSi
   /usr/include/c++/15.1.1/compare \
   /usr/include/c++/15.1.1/concepts \
   /usr/include/c++/15.1.1/cstddef \
-  /usr/include/c++/15.1.1/cstdint \
   /usr/include/c++/15.1.1/cstdio \
   /usr/include/c++/15.1.1/cstdlib \
   /usr/include/c++/15.1.1/cwchar \
@@ -894,9 +892,6 @@ CasinoSimulator: /usr/lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a \
   /usr/lib/ld-linux-x86-64.so.2 \
-  /usr/lib/libEGL.so.1 \
-  /usr/lib/libGL.so.1 \
-  /usr/lib/libGLEW.so \
   /usr/lib/libGLX.so \
   /usr/lib/libGLdispatch.so.0 \
   /usr/lib/libOpenGL.so \
@@ -908,8 +903,6 @@ CasinoSimulator: /usr/lib/Scrt1.o \
   /usr/lib/libm.so.6 \
   /usr/lib/libmvec.so.1 \
   /usr/lib/libxcb.so.1 \
-  /usr/lib32/libEGL.so.1 \
-  /usr/lib32/libGL.so.1 \
   /usr/lib32/libGLdispatch.so.0 \
   /usr/lib32/libX11.so.6 \
   /usr/lib32/libXau.so.6 \
@@ -918,8 +911,11 @@ CasinoSimulator: /usr/lib/Scrt1.o \
   /usr/local/lib/libSDL2.so \
   CMakeFiles/CasinoSimulator.dir/src/game.cpp.o \
   CMakeFiles/CasinoSimulator.dir/src/main.cpp.o \
-  CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o
+  CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o \
+  libglad.a
 
+
+libglad.a:
 
 CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
 
@@ -935,8 +931,6 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
 
 /usr/lib32/libGLdispatch.so.0:
 
-/usr/lib32/libGL.so.1:
-
 /usr/lib/libmvec.so.1:
 
 /usr/lib/libm.so.6:
@@ -945,11 +939,7 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
 
 /usr/lib/libX11.so.6:
 
-/usr/lib/libGLEW.so:
-
 /usr/lib/libOpenGL.so:
-
-/usr/lib/libGL.so.1:
 
 /usr/lib/ld-linux-x86-64.so.2:
 
@@ -1034,10 +1024,6 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
 /usr/include/bits/time.h:
 
 /usr/include/asm/posix_types.h:
-
-/usr/include/c++/15.1.1/cwctype:
-
-/usr/include/asm-generic/int-ll64.h:
 
 /usr/local/include/SDL2/begin_code.h:
 
@@ -1159,10 +1145,6 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/immintrin.h:
 
-/usr/lib/libXau.so.6:
-
-/usr/include/c++/15.1.1/pstl/pstl_config.h:
-
 /usr/lib/libc_nonshared.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/prfchiintrin.h:
@@ -1173,9 +1155,9 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
 
 /usr/include/c++/15.1.1/cerrno:
 
-/usr/include/bits/types/struct_timespec.h:
-
 /usr/include/c++/15.1.1/clocale:
+
+/usr/include/bits/types/struct_timespec.h:
 
 /usr/local/include/SDL2/close_code.h:
 
@@ -1199,17 +1181,23 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
 
 /usr/include/c++/15.1.1/bits/stringfwd.h:
 
-/usr/include/c++/15.1.1/bits/stl_iterator.h:
+/usr/include/c++/15.1.1/bits/vector.tcc:
 
-/usr/lib/libxcb.so.1:
+/usr/include/c++/15.1.1/cwctype:
 
-/usr/include/bits/endian.h:
+/usr/include/asm-generic/int-ll64.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2minmaxintrin.h:
+/usr/include/c++/15.1.1/bits/stl_vector.h:
 
-/usr/include/bits/stdio_lim.h:
+/usr/lib/libc.so:
 
-/usr/include/c++/15.1.1/bits/std_abs.h:
+/usr/include/bits/pthreadtypes.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/sm3intrin.h:
+
+/usr/include/c++/15.1.1/bits/stl_iterator_base_funcs.h:
+
+/usr/include/bits/floatn-common.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/xsaveoptintrin.h:
 
@@ -1220,8 +1208,6 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
 /usr/include/bits/struct_rwlock.h:
 
 /usr/include/c++/15.1.1/bits/range_access.h:
-
-/usr/include/GL/gl.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/float.h:
 
@@ -1262,6 +1248,14 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/raointintrin.h:
 
 /usr/include/c++/15.1.1/bits/functexcept.h:
+
+/home/kacper/cpp/CasinoSimulator/src/main.cpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/keylockerintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/gfniintrin.h:
+
+/usr/include/c++/15.1.1/bit:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a:
 
@@ -1315,25 +1309,15 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o:
 
 /usr/include/bits/types/wint_t.h:
 
-/usr/local/include/SDL2/SDL_clipboard.h:
-
-/home/kacper/cpp/CasinoSimulator/src/game.cpp:
-
-CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
-
-/usr/include/c++/15.1.1/bits/cpp_type_traits.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/adxintrin.h:
-
 /usr/include/c++/15.1.1/bits/ptr_traits.h:
-
-/usr/lib32/libEGL.so.1:
 
 /usr/include/bits/types/timer_t.h:
 
 /usr/include/c++/15.1.1/string:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avxvnniintrin.h:
+
+/usr/include/bits/long-double.h:
 
 /usr/include/bits/fp-logb.h:
 
@@ -1344,6 +1328,12 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
 /usr/include/bits/mathcalls-macros.h:
 
 /usr/include/c++/15.1.1/cstdlib:
+
+/usr/local/include/SDL2/SDL_metal.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/hresetintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/cldemoteintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxint8intrin.h:
 
@@ -1356,12 +1346,6 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
 /usr/include/bits/libc-header-start.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512ifmaintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/sm3intrin.h:
-
-/usr/include/c++/15.1.1/bits/stl_iterator_base_funcs.h:
-
-/usr/include/bits/floatn-common.h:
 
 /usr/local/include/SDL2/SDL_pixels.h:
 
@@ -1383,19 +1367,7 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
 
 /usr/include/c++/15.1.1/bits/utility.h:
 
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/c++/15.1.1/tr1/bessel_function.tcc:
-
 /usr/include/bits/types/struct_FILE.h:
-
-/usr/include/c++/15.1.1/bits/ostream.tcc:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxbf16intrin.h:
-
-/usr/include/GL/glew.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vnnivlintrin.h:
 
 /usr/include/bits/flt-eval-method.h:
 
@@ -1423,15 +1395,17 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
 
 /usr/include/c++/15.1.1/limits:
 
+/usr/local/include/SDL2/SDL_clipboard.h:
+
+/home/kacper/cpp/CasinoSimulator/src/game.cpp:
+
+CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
+
+/usr/include/c++/15.1.1/bits/cpp_type_traits.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/adxintrin.h:
+
 /usr/include/bits/locale.h:
-
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512bitalgintrin.h:
-
-/usr/include/bits/fp-fast.h:
 
 /usr/include/c++/15.1.1/bits/version.h:
 
@@ -1439,37 +1413,31 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
 
 /usr/include/c++/15.1.1/bits/refwrap.h:
 
+/usr/include/c++/15.1.1/bits/stl_iterator.h:
+
+/usr/lib/libxcb.so.1:
+
+/usr/include/bits/endian.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2minmaxintrin.h:
+
+/home/kacper/cpp/CasinoSimulator/include/glad.h:
+
 /home/kacper/cpp/CasinoSimulator/include/shader_utils.hpp:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/GL/glu.h:
-
-/usr/include/bits/types.h:
 
 /usr/include/c++/15.1.1/streambuf:
 
 /usr/include/c++/15.1.1/bits/exception_defines.h:
 
-/usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512bwintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/sgxintrin.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/c++/15.1.1/bits/stl_pair.h:
-
-/usr/include/c++/15.1.1/cstddef:
+/usr/include/bits/types.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/prfchwintrin.h:
 
 /usr/include/bits/math-vector.h:
 
-/usr/include/bits/long-double.h:
+/usr/include/asm-generic/errno-base.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512bwintrin.h:
 
 /usr/include/alloca.h:
 
@@ -1482,6 +1450,16 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
 /usr/include/c++/15.1.1/cmath:
 
 /usr/include/bits/types/__sigset_t.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/c++/15.1.1/bits/stl_bvector.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/ia32intrin.h:
+
+/usr/include/KHR/khrplatform.h:
+
+/usr/include/bits/endianness.h:
 
 /usr/include/bits/byteswap.h:
 
@@ -1496,10 +1474,6 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
 /usr/local/include/SDL2/SDL_log.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vlintrin.h:
-
-/usr/lib/libc.so:
-
-/usr/include/bits/pthreadtypes.h:
 
 /usr/include/bits/select.h:
 
@@ -1516,6 +1490,26 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
 /usr/include/c++/15.1.1/bits/locale_classes.h:
 
 /usr/include/bits/types/struct_timeval.h:
+
+/usr/include/c++/15.1.1/bits/std_abs.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/c++/15.1.1/tr1/bessel_function.tcc:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/lib/libXau.so.6:
+
+/usr/include/c++/15.1.1/pstl/pstl_config.h:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512bitalgintrin.h:
 
 /usr/include/c++/15.1.1/bits/memory_resource.h:
 
@@ -1543,6 +1537,10 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
 
 /usr/include/bits/thread-shared-types.h:
 
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/bits/stdint-intn.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512fintrin.h:
 
 /usr/include/bits/types/error_t.h:
@@ -1553,9 +1551,9 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
 
 /usr/include/bits/sched.h:
 
-/usr/include/c++/15.1.1/ext/numeric_traits.h:
-
 /usr/include/features.h:
+
+/usr/include/c++/15.1.1/ext/numeric_traits.h:
 
 /usr/include/bits/types/__FILE.h:
 
@@ -1566,10 +1564,6 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o:
 /usr/include/c++/15.1.1/bits/ranges_base.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/clflushoptintrin.h:
-
-/usr/include/bits/stdint-intn.h:
-
-/usr/include/bits/types/clockid_t.h:
 
 /usr/include/asm/errno.h:
 
@@ -1589,6 +1583,16 @@ CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o:
 
 /usr/include/bits/types/locale_t.h:
 
+/usr/include/c++/15.1.1/bits/stl_uninitialized.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/sgxintrin.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/15.1.1/bits/stl_pair.h:
+
+/usr/include/c++/15.1.1/cstddef:
+
 /usr/include/c++/15.1.1/cstdio:
 
 /usr/local/include/SDL2/SDL_video.h:
@@ -1603,17 +1607,11 @@ CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512bf16vlintrin.h:
 
-/usr/local/include/SDL2/SDL_metal.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/cldemoteintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/hresetintrin.h:
-
-/usr/lib/libEGL.so.1:
-
 /usr/include/c++/15.1.1/ext/type_traits.h:
 
 /usr/include/c++/15.1.1/numbers:
+
+/usr/include/c++/15.1.1/vector:
 
 /usr/include/c++/15.1.1/stdlib.h:
 
@@ -1661,6 +1659,12 @@ CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512dqintrin.h:
 
+/usr/local/include/SDL2/SDL_rect.h:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
+
 /usr/include/errno.h:
 
 /usr/include/features-time64.h:
@@ -1695,12 +1699,6 @@ CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o:
 
 /usr/include/stdc-predef.h:
 
-/usr/local/include/SDL2/SDL_rect.h:
-
-/usr/include/endian.h:
-
-/usr/include/stdint.h:
-
 /usr/include/bits/wordsize.h:
 
 /usr/include/c++/15.1.1/bits/allocator.h:
@@ -1730,8 +1728,6 @@ CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o:
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxtransposeintrin.h:
 
 /usr/include/asm/bitsperlong.h:
-
-/usr/include/c++/15.1.1/cstdint:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2-512convertintrin.h:
 
@@ -1787,6 +1783,12 @@ CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/enqcmdintrin.h:
 
+/usr/include/c++/15.1.1/bits/ostream.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxbf16intrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vnnivlintrin.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vp2intersectintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vp2intersectvlintrin.h:
@@ -1828,13 +1830,3 @@ CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o:
 /usr/local/include/SDL2/SDL_touch.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/cmpccxaddintrin.h:
-
-/home/kacper/cpp/CasinoSimulator/src/main.cpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/keylockerintrin.h:
-
-/usr/include/c++/15.1.1/bit:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/gfniintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/ia32intrin.h:

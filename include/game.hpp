@@ -1,7 +1,7 @@
 #pragma once
 
+#include <glad.h>
 #include <SDL2/SDL.h>
-#include <GL/glew.h>
 
 class Game 
 {
@@ -14,6 +14,7 @@ public:
     static GLuint EBO;
 
     static bool Init();
+    static void PreRun();
     static void Run();
     static void HandleEvents();
     static void Cleanup();

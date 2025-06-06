@@ -1,6 +1,12 @@
 [
 {
   "directory": "/home/kacper/cpp/CasinoSimulator/build",
+  "command": "/usr/bin/cc  -I/home/kacper/cpp/CasinoSimulator/include -Wall -Wextra -Wpedantic -o CMakeFiles/glad.dir/src/glad.c.o -c /home/kacper/cpp/CasinoSimulator/src/glad.c",
+  "file": "/home/kacper/cpp/CasinoSimulator/src/glad.c",
+  "output": "CMakeFiles/glad.dir/src/glad.c.o"
+},
+{
+  "directory": "/home/kacper/cpp/CasinoSimulator/build",
   "command": "/usr/bin/c++  -I/home/kacper/cpp/CasinoSimulator/include -isystem /usr/local/include/SDL2 -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles/CasinoSimulator.dir/src/game.cpp.o -c /home/kacper/cpp/CasinoSimulator/src/game.cpp",
   "file": "/home/kacper/cpp/CasinoSimulator/src/game.cpp",
   "output": "CMakeFiles/CasinoSimulator.dir/src/game.cpp.o"

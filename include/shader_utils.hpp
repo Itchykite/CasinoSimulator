@@ -1,5 +1,5 @@
 #include <string>
-#include <GL/glew.h>
+#include <glad.h>
 
 std::string LoadShaderSource(const std::string& filePath);
 GLuint CompileShader(GLenum type, const std::string& source);

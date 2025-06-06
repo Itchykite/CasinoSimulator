@@ -4,10 +4,9 @@
 CMakeFiles/CasinoSimulator.dir/src/game.cpp.o
  /home/kacper/cpp/CasinoSimulator/src/game.cpp
  /home/kacper/cpp/CasinoSimulator/include/game.hpp
+ /home/kacper/cpp/CasinoSimulator/include/glad.h
  /home/kacper/cpp/CasinoSimulator/include/shader_utils.hpp
- /usr/include/GL/gl.h
- /usr/include/GL/glew.h
- /usr/include/GL/glu.h
+ /usr/include/KHR/khrplatform.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
@@ -109,17 +108,21 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o
  /usr/include/c++/15.1.1/bits/specfun.h
  /usr/include/c++/15.1.1/bits/std_abs.h
  /usr/include/c++/15.1.1/bits/stl_algobase.h
+ /usr/include/c++/15.1.1/bits/stl_bvector.h
  /usr/include/c++/15.1.1/bits/stl_construct.h
  /usr/include/c++/15.1.1/bits/stl_function.h
  /usr/include/c++/15.1.1/bits/stl_iterator.h
  /usr/include/c++/15.1.1/bits/stl_iterator_base_funcs.h
  /usr/include/c++/15.1.1/bits/stl_iterator_base_types.h
  /usr/include/c++/15.1.1/bits/stl_pair.h
+ /usr/include/c++/15.1.1/bits/stl_uninitialized.h
+ /usr/include/c++/15.1.1/bits/stl_vector.h
  /usr/include/c++/15.1.1/bits/string_view.tcc
  /usr/include/c++/15.1.1/bits/stringfwd.h
  /usr/include/c++/15.1.1/bits/uses_allocator.h
  /usr/include/c++/15.1.1/bits/uses_allocator_args.h
  /usr/include/c++/15.1.1/bits/utility.h
+ /usr/include/c++/15.1.1/bits/vector.tcc
  /usr/include/c++/15.1.1/bits/version.h
  /usr/include/c++/15.1.1/cctype
  /usr/include/c++/15.1.1/cerrno
@@ -128,7 +131,6 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o
  /usr/include/c++/15.1.1/compare
  /usr/include/c++/15.1.1/concepts
  /usr/include/c++/15.1.1/cstddef
- /usr/include/c++/15.1.1/cstdint
  /usr/include/c++/15.1.1/cstdio
  /usr/include/c++/15.1.1/cstdlib
  /usr/include/c++/15.1.1/cwchar
@@ -162,6 +164,7 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o
  /usr/include/c++/15.1.1/tr1/special_function_util.h
  /usr/include/c++/15.1.1/tuple
  /usr/include/c++/15.1.1/type_traits
+ /usr/include/c++/15.1.1/vector
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++locale.h
@@ -359,9 +362,8 @@ CMakeFiles/CasinoSimulator.dir/src/game.cpp.o
 CMakeFiles/CasinoSimulator.dir/src/main.cpp.o
  /home/kacper/cpp/CasinoSimulator/src/main.cpp
  /home/kacper/cpp/CasinoSimulator/include/game.hpp
- /usr/include/GL/gl.h
- /usr/include/GL/glew.h
- /usr/include/GL/glu.h
+ /home/kacper/cpp/CasinoSimulator/include/glad.h
+ /usr/include/KHR/khrplatform.h
  /usr/include/alloca.h
  /usr/include/bits/atomic_wide_counter.h
  /usr/include/bits/byteswap.h
@@ -445,8 +447,6 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o
  /usr/include/c++/15.1.1/cmath
  /usr/include/c++/15.1.1/compare
  /usr/include/c++/15.1.1/concepts
- /usr/include/c++/15.1.1/cstddef
- /usr/include/c++/15.1.1/cstdint
  /usr/include/c++/15.1.1/cstdlib
  /usr/include/c++/15.1.1/debug/assertions.h
  /usr/include/c++/15.1.1/debug/debug.h
@@ -661,10 +661,9 @@ CMakeFiles/CasinoSimulator.dir/src/main.cpp.o
 
 CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o
  /home/kacper/cpp/CasinoSimulator/src/shader_utils.cpp
+ /home/kacper/cpp/CasinoSimulator/include/glad.h
  /home/kacper/cpp/CasinoSimulator/include/shader_utils.hpp
- /usr/include/GL/gl.h
- /usr/include/GL/glew.h
- /usr/include/GL/glu.h
+ /usr/include/KHR/khrplatform.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
@@ -810,7 +809,6 @@ CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o
  /usr/include/c++/15.1.1/compare
  /usr/include/c++/15.1.1/concepts
  /usr/include/c++/15.1.1/cstddef
- /usr/include/c++/15.1.1/cstdint
  /usr/include/c++/15.1.1/cstdio
  /usr/include/c++/15.1.1/cstdlib
  /usr/include/c++/15.1.1/cwchar
@@ -898,9 +896,6 @@ CasinoSimulator
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a
  /usr/lib/ld-linux-x86-64.so.2
- /usr/lib/libEGL.so.1
- /usr/lib/libGL.so.1
- /usr/lib/libGLEW.so
  /usr/lib/libGLX.so
  /usr/lib/libGLdispatch.so.0
  /usr/lib/libOpenGL.so
@@ -912,8 +907,6 @@ CasinoSimulator
  /usr/lib/libm.so.6
  /usr/lib/libmvec.so.1
  /usr/lib/libxcb.so.1
- /usr/lib32/libEGL.so.1
- /usr/lib32/libGL.so.1
  /usr/lib32/libGLdispatch.so.0
  /usr/lib32/libX11.so.6
  /usr/lib32/libXau.so.6
@@ -923,4 +916,5 @@ CasinoSimulator
  /home/kacper/cpp/CasinoSimulator/build/CMakeFiles/CasinoSimulator.dir/src/game.cpp.o
  /home/kacper/cpp/CasinoSimulator/build/CMakeFiles/CasinoSimulator.dir/src/main.cpp.o
  /home/kacper/cpp/CasinoSimulator/build/CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o
+ /home/kacper/cpp/CasinoSimulator/build/libglad.a
 

@@ -25,21 +25,6 @@ GLuint CompileShader(GLenum type, const std::string& source)
     glShaderSource(shader, 1, &src, nullptr);
     glCompileShader(shader);
 
-    GLint success;
-    glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
-    if(!success)
-    {
-        GLint length;
-    
-        glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &length);
-        std::string infoLog(length, ' ');
-        glGetShaderInfoLog(shader, length, nullptr, &infoLog[0]);
-        
-        std::cerr << "Error: Shader compilation failed\n" << infoLog << std::endl;
-        glDeleteShader(shader);
-        return 0;
-    }
-
     return shader;
 }
 
@@ -56,21 +41,7 @@ GLuint CreateShaderProgram(const std::string& vertexPath, const std::string& fra
     glAttachShader(program, fragmentShader);
     glLinkProgram(program);
 
-    GLint success;
-    glGetProgramiv(program, GL_LINK_STATUS, &success);
-    if(!success)
-    {
-        GLint length;
-        glGetProgramiv(program, GL_INFO_LOG_LENGTH, &length);
-        std::string infoLog(length, ' ');
-        glGetProgramInfoLog(program, length, nullptr, &infoLog[0]);
-        
-        std::cerr << "Error: Shader program linking failed\n" << infoLog << std::endl;
-        glDeleteProgram(program);
-        glDeleteShader(vertexShader);
-        glDeleteShader(fragmentShader);
-        return 0;
-    }
+    glValidateProgram(program);
 
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);

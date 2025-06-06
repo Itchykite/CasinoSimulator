@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(CasinoSimulator LANGUAGES CXX)
+project(CasinoSimulator LANGUAGES C CXX)
 
 # C++ 20
 set(CMAKE_CXX_STANDARD 20)
@@ -25,11 +25,10 @@ if(NOT OpenGL_FOUND)
     message(FATAL_ERROR "OpenGL not found")
 endif()
 
-# Znajdź GLEW
-find_package(GLEW REQUIRED)
-if(NOT GLEW_FOUND)
-    message(FATAL_ERROR "GLEW not found")
-endif()
+# Dodaj bibliotekę GLAD
+add_library(glad STATIC ${CMAKE_SOURCE_DIR}/src/glad.c)
+set_property(TARGET glad PROPERTY LINKER_LANGUAGE C)
+target_include_directories(glad PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
 # Automatycznie znajdź pliki CPP w src i podfolderach
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
@@ -51,10 +50,10 @@ target_link_libraries(CasinoSimulator
     PRIVATE
         SDL2::SDL2
         OpenGL::GL
-        GLEW::GLEW
+        glad
 )
 
 # Debug: wyświetl znalezione ścieżki
 message(STATUS "SDL2_INCLUDE_DIRS: ${SDL2_INCLUDE_DIRS}")
 message(STATUS "SDL2_LIBRARIES: ${SDL2_LIBRARIES}")
-
+message(STATUS "OpenGL_INCLUDE_DIRS: ${OpenGL_INCLUDE_DIRS}")

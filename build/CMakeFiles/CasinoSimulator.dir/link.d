@@ -6,7 +6,7 @@ CasinoSimulator: \
   CMakeFiles/CasinoSimulator.dir/src/main.cpp.o \
   CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o \
   /usr/local/lib/libSDL2.so \
-  /usr/lib/libGLEW.so \
+  libglad.a \
   /usr/lib/libGLX.so \
   /usr/lib/libOpenGL.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so \
@@ -35,10 +35,6 @@ CasinoSimulator: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o \
-  /usr/lib32/libEGL.so.1 \
-  /usr/lib/libEGL.so.1 \
-  /usr/lib32/libGL.so.1 \
-  /usr/lib/libGL.so.1 \
   /usr/lib32/libGLdispatch.so.0 \
   /usr/lib/libGLdispatch.so.0 \
   /usr/lib32/libX11.so.6 \
@@ -65,7 +61,7 @@ CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o:
 
 /usr/local/lib/libSDL2.so:
 
-/usr/lib/libGLEW.so:
+libglad.a:
 
 /usr/lib/libGLX.so:
 
@@ -122,14 +118,6 @@ CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o:
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o:
-
-/usr/lib32/libEGL.so.1:
-
-/usr/lib/libEGL.so.1:
-
-/usr/lib32/libGL.so.1:
-
-/usr/lib/libGL.so.1:
 
 /usr/lib32/libGLdispatch.so.0:
 

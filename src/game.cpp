@@ -1,6 +1,8 @@
 #include <game.hpp>
 #include <shader_utils.hpp>
 
+#include <vector>
+
 SDL_Window* Game::window = nullptr;
 SDL_GLContext Game::glContext = nullptr;
 bool Game::running = true;
@@ -14,43 +16,36 @@ GLuint Game::EBO = 0;
 
 void setup()
 {
-    float vertices[] = 
+    // CPU
+    const std::vector<GLfloat> vertexPositions =
     {
-         0.5f,  0.5f, 0.0f,  // top right
-         0.5f, -0.5f, 0.0f,  // bottom right
-        -0.5f, -0.5f, 0.0f,  // bottom left
-        -0.5f,  0.5f, 0.0f   // top left 
+        -0.8f, -0.8f, 0.0f,
+        0.8f, -0.8f, 0.0f,
+        0.0f, 0.8f, 0.0f
     };
-    
-    unsigned int indices[] = 
-    { 
-        0, 1, 3,   // first triangle
-        1, 2, 3    // second triangle
-    };  
-   
-    glGenVertexArrays(1, &Game::VAO);
-    glGenBuffers(1, &Game::VBO);
-    glGenBuffers(1, &Game::EBO);
 
+    // GPU
+    glGenVertexArrays(1, &Game::VAO);
     glBindVertexArray(Game::VAO);
 
+    glGenBuffers(1, &Game::VBO);
     glBindBuffer(GL_ARRAY_BUFFER, Game::VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, vertexPositions.size() * sizeof(GLfloat), vertexPositions.data(), GL_STATIC_DRAW);
 
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, Game::EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
-
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
     glBindVertexArray(0);
+    glDisableVertexAttribArray(0);
 }
 
 bool Game::Init()
 {
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 6);
+
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+    SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+    SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
 
     if(SDL_Init(SDL_INIT_VIDEO) < 0)
     {
@@ -72,16 +67,13 @@ bool Game::Init()
         return false;
     }
 
-    glewExperimental = GL_TRUE;
-    if(glewInit() != GLEW_OK)
+    if(!gladLoadGLLoader(SDL_GL_GetProcAddress))
     {
-        SDL_Log("Failed to initialize GLEW");
+        SDL_Log("Failed to initialize GLAD! SDL_Error: %s", SDL_GetError());
         return false;
     }
 
     glViewport(0, 0, windowWidth, windowHeight);
-    glEnable(GL_DEPTH_TEST);
-
 
     setup();
 
@@ -100,21 +92,34 @@ void Game::HandleEvents()
     }
 }
 
-void Game::Run()
+void Game::PreRun()
 {
     GLuint shaderProgram = CreateShaderProgram("../assets/shaders/vertex_shader.glsl", "../assets/shaders/fragment_shader.glsl");
+   
+    glDisable(GL_DEPTH_TEST);
+    glDisable(GL_CULL_FACE);
 
+    glViewport(0, 0, windowWidth, windowHeight);
+    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+
+    glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
+
+    glUseProgram(shaderProgram);
+}
+
+void Game::Run()
+{
     while(running)
     {
         HandleEvents();
-    
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        glUseProgram(shaderProgram);
+        PreRun();
+
         glBindVertexArray(Game::VAO);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-       
+        glBindBuffer(GL_ARRAY_BUFFER, Game::VBO);
+
+        glDrawArrays(GL_TRIANGLES, 0, 3);
+
         SDL_GL_SwapWindow(window);
     }
 }

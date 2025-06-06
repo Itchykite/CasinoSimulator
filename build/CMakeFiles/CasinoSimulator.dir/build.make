@@ -129,7 +129,7 @@ CasinoSimulator: CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o
 CasinoSimulator: CMakeFiles/CasinoSimulator.dir/build.make
 CasinoSimulator: CMakeFiles/CasinoSimulator.dir/compiler_depend.ts
 CasinoSimulator: /usr/local/lib/libSDL2.so
-CasinoSimulator: /usr/lib/libGLEW.so
+CasinoSimulator: libglad.a
 CasinoSimulator: /usr/lib/libGLX.so
 CasinoSimulator: /usr/lib/libOpenGL.so
 CasinoSimulator: CMakeFiles/CasinoSimulator.dir/link.txt
