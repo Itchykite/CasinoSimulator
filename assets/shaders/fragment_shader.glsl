@@ -1,4 +1,4 @@
-#version 460 core
+#version 450 core
 
 in vec3 ourColor; // Color passed from vertex shader
 out vec4 FragColor;

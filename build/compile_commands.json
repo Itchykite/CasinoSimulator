@@ -1,25 +1,25 @@
 [
 {
   "directory": "/home/kacper/cpp/CasinoSimulator/build",
-  "command": "/usr/bin/cc  -I/home/kacper/cpp/CasinoSimulator/include -Wall -Wextra -Wpedantic -o CMakeFiles/glad.dir/src/glad.c.o -c /home/kacper/cpp/CasinoSimulator/src/glad.c",
+  "command": "/usr/sbin/cc  -I/home/kacper/cpp/CasinoSimulator/include -Wall -Wextra -Wpedantic -o CMakeFiles/glad.dir/src/glad.c.o -c /home/kacper/cpp/CasinoSimulator/src/glad.c",
   "file": "/home/kacper/cpp/CasinoSimulator/src/glad.c",
   "output": "CMakeFiles/glad.dir/src/glad.c.o"
 },
 {
   "directory": "/home/kacper/cpp/CasinoSimulator/build",
-  "command": "/usr/bin/c++  -I/home/kacper/cpp/CasinoSimulator/include -isystem /usr/local/include/SDL2 -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles/CasinoSimulator.dir/src/game.cpp.o -c /home/kacper/cpp/CasinoSimulator/src/game.cpp",
+  "command": "/usr/sbin/c++  -I/home/kacper/cpp/CasinoSimulator/include -isystem /usr/include/SDL2 -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles/CasinoSimulator.dir/src/game.cpp.o -c /home/kacper/cpp/CasinoSimulator/src/game.cpp",
   "file": "/home/kacper/cpp/CasinoSimulator/src/game.cpp",
   "output": "CMakeFiles/CasinoSimulator.dir/src/game.cpp.o"
 },
 {
   "directory": "/home/kacper/cpp/CasinoSimulator/build",
-  "command": "/usr/bin/c++  -I/home/kacper/cpp/CasinoSimulator/include -isystem /usr/local/include/SDL2 -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles/CasinoSimulator.dir/src/main.cpp.o -c /home/kacper/cpp/CasinoSimulator/src/main.cpp",
+  "command": "/usr/sbin/c++  -I/home/kacper/cpp/CasinoSimulator/include -isystem /usr/include/SDL2 -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles/CasinoSimulator.dir/src/main.cpp.o -c /home/kacper/cpp/CasinoSimulator/src/main.cpp",
   "file": "/home/kacper/cpp/CasinoSimulator/src/main.cpp",
   "output": "CMakeFiles/CasinoSimulator.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/kacper/cpp/CasinoSimulator/build",
-  "command": "/usr/bin/c++  -I/home/kacper/cpp/CasinoSimulator/include -isystem /usr/local/include/SDL2 -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o -c /home/kacper/cpp/CasinoSimulator/src/shader_utils.cpp",
+  "command": "/usr/sbin/c++  -I/home/kacper/cpp/CasinoSimulator/include -isystem /usr/include/SDL2 -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o -c /home/kacper/cpp/CasinoSimulator/src/shader_utils.cpp",
   "file": "/home/kacper/cpp/CasinoSimulator/src/shader_utils.cpp",
   "output": "CMakeFiles/CasinoSimulator.dir/src/shader_utils.cpp.o"
 }
